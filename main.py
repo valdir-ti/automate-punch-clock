@@ -59,7 +59,7 @@ time.sleep(1)
 pyautogui.click(x=534, y=750, duration=1)
 
 # Segunda aba
-time.sleep(2)
+time.sleep(5)
 
 pyautogui.click(x=380, y=590, duration=1)
 
@@ -67,7 +67,7 @@ pyautogui.write(SECRET_CPF)
 
 time.sleep(2)
 
-# pyautogui.click(x=550, y=660, duration=1)
+pyautogui.click(x=550, y=660, duration=1)
 
 # Fecha a janela do Chrome
 pyautogui.hotkey('alt', 'f4')
