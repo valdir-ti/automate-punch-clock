@@ -1,9 +1,9 @@
 import os
-from dotenv import load_dotenv
-import pyautogui
-import subprocess
 import time
+import pyautogui
 import pyperclip
+import subprocess
+from dotenv import load_dotenv
 
 # Carrega as variaveis de ambiente
 load_dotenv()
@@ -27,16 +27,19 @@ pyautogui.hotkey('ctrl', 'v')
 # Pressiona Enter para abrir o link
 pyautogui.press('enter')
 
-# Aguarda o carregamento do site
-time.sleep(3)
+time.sleep(1)
+
+pyautogui.hotkey('F11')
+
+time.sleep(1)
 
 # Clica na aba Registrar ponto
-pyautogui.click(x=290, y=360, duration=1)
+pyautogui.click(x=290, y=250, duration=1)
 
 time.sleep(1)
 
 # Clica no campo de código
-pyautogui.click(x=100, y=550, duration=1)
+pyautogui.click(x=50, y=440, duration=1)
 
 time.sleep(1)
 
@@ -52,18 +55,18 @@ time.sleep(1)
 pyautogui.write(SECRET_PIN)
 
 # Clica no campo de captcha
-pyautogui.click(x=140, y=660, duration=1)
+pyautogui.click(x=150, y=540, duration=1)
 
 time.sleep(2)
 
 # Clica no botão registrar
-pyautogui.click(x=255, y=734, duration=1)
+pyautogui.click(x=255, y=620, duration=1)
 
 # Segunda aba
 time.sleep(3)
 
 # Clica no campo de CPF
-pyautogui.click(x=90, y=555, duration=1)
+pyautogui.click(x=50, y=440, duration=1)
 
 time.sleep(1)
 
@@ -73,9 +76,13 @@ for char in str(SECRET_CPF):
     time.sleep(0.3)
 
 # Clica para finalizar o processo
-pyautogui.click(x=255, y=641, duration=1)
+pyautogui.click(x=273, y=525, duration=1)
 
-time.sleep(3)
+time.sleep(2)
+
+pyautogui.hotkey('F11')
+
+time.sleep(2)
 
 # Fecha a janela do Chrome
-pyautogui.hotkey('alt', 'f4')
+pyautogui.hotkey('ctrl', 'w')
