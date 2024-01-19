@@ -15,6 +15,8 @@ SECRET_CPF = os.environ.get('SECRET_CPF')
 # Abre o Google Chrome
 subprocess.run(['google-chrome'])
 
+time.sleep(2)
+
 # Foca na barra de digitação do navegador
 pyautogui.hotkey('ctrl', 'l')
 
@@ -27,11 +29,11 @@ pyautogui.hotkey('ctrl', 'v')
 # Pressiona Enter para abrir o link
 pyautogui.press('enter')
 
-time.sleep(1)
+time.sleep(2)
 
 pyautogui.hotkey('F11')
 
-time.sleep(1)
+time.sleep(2)
 
 # Clica na aba Registrar ponto
 pyautogui.click(x=290, y=250, duration=1)
