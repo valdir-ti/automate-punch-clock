@@ -14,7 +14,7 @@ SECRET_CPF = os.environ.get('SECRET_CPF')
 
 # Abre o Google Chrome
 subprocess.run(['google-chrome'])
-
+    
 time.sleep(2)
 
 # Foca na barra de digitação do navegador
@@ -75,7 +75,7 @@ time.sleep(1)
 # Digita no campo CPF pausadamente
 for char in str(SECRET_CPF):
     pyautogui.typewrite(char)
-    time.sleep(0.3)
+    time.sleep(0.2)
 
 # Clica para finalizar o processo
 pyautogui.click(x=273, y=525, duration=1)
