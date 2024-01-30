@@ -88,3 +88,8 @@ time.sleep(2)
 
 # Fecha a janela do Chrome
 pyautogui.hotkey('ctrl', 'w')
+
+time.sleep(3)
+
+# Fecha a janela do Chrome
+pyautogui.hotkey('alt', 'f4')
